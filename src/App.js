@@ -3,8 +3,8 @@ import './App.css';
 import Home from './features/pages/Home';
 import LoginPage from './features/pages/LoginPage';
 import SignupPage from './features/pages/SignupPage';
-import Cart from './features/cart/Cart';
 import Checkout from './features/pages/Checkout';
+import ProductDetailPage from './features/pages/ProductDetailPage';
 import{
   createBrowserRouter,
   RouterProvider,
@@ -31,6 +31,10 @@ const router = createBrowserRouter([{
 {
   path:"/checkout",
   element:<Checkout></Checkout>
+},
+{
+  path:"/productdetail",
+  element:<ProductDetailPage></ProductDetailPage>
 },
 ]);
 
